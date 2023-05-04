@@ -1,0 +1,278 @@
+//20_ABRIL_2023
+GIAMPIERO RUIZ VILLADIEGO
+
+Algoritmo ingresarNotas
+	Definir nota como Entero
+	
+	Escribir "Ingrese una nota valida"
+	leer nota
+	
+	Mientras nota < 0 o nota > 10
+		
+		Escribir "Nota incorrecta, ingrese una nota valida"
+		leer nota
+		
+	FinMientras
+		
+		
+		Escribir "La nota es correcta"
+		
+FinAlgoritmo
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 		Algoritmo vocalSecreta
+		Definir vocal, vocalElegir Como Caracter
+		vocal= 'e'
+		
+		vocal = Mayusculas(vocal)
+
+		Escribir "Ingrese una vocal"
+		Leer vocalElecta
+		
+		Mientras vocalElecta <> vocal
+			
+			Escribir "La vocal es incorrecta, vuelva a intentarlo"
+			Leer vocalElecta
+			
+		FinMientras
+		
+		Escribir "La vocal es correcta"
+		
+FinAlgoritmo
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	Algoritmo Correccion_Mientras
+	Definir num Como Entero
+	El programa ingresará números mientras sean PARES
+	Escribir "Ingrese un número"
+	Leer num
+	Mientras num 2 == 0 Hacer
+	Escribir "Ingrese otro número"
+
+	FinAlgoritmo
+
+Algoritmo Correccion_Mientras
+	Definir num Como Entero
+	//El programa ingresará números mientras sean PARES
+	Escribir "Ingrese un número"
+	Leer num
+	
+	Mientras num % 2 == 0
+		
+		Escribir "Ingrese otro número"
+		leer num
+		
+	FinMientras
+		
+FinAlgoritmo
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Algoritmo ingresarNotasDos
+	Definir nota como Entero
+	
+	Hacer 
+		
+		Escribir "Ingrese una nota valida"
+		leer nota
+		
+	Mientras Que nota < 0 o nota > 10
+	
+	Escribir "La nota es correcta"
+	
+FinAlgoritmo
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Algoritmo vocalSecretaDos
+	Definir vocal, vocalElegir Como Caracter
+	vocal = Mayusculas(vocal)
+	vocal= 'e'
+	
+	Hacer 
+		Escribir "Ingrese una vocal"
+		Leer vocalElecta
+	
+	Mientras que vocalElecta <> vocal
+	
+	Escribir "La vocal es correcta"
+	
+FinAlgoritmo
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	Algoritmo Correccion_HacerMientras
+	num Como Entero
+	Repet
+	Escribir "Ingrese un número PAR"
+	Leer num
+	Mientras Qe num MOD 2 0
+	FinAlgoritmo
+
+Algoritmo CorreccionErrores
+	Definir num Como Entero
+	//El programa ingresará números mientras sean PARES
+	Escribir "Ingrese un número"
+	Leer num
+	
+	Hacer
+		
+		Escribir "Ingrese un número"
+		leer num
+		
+	Mientras que num % 2 == 0
+	
+	Escribir "Numero incorrecto"
+	
+FinAlgoritmo
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Algoritmo EjemploPara
+	Definir i, nume, mayorn Como Entero
+	
+	mayorn= 0
+	
+	Para i <- 1 Hasta 4 Con Paso 1 Hacer
+		
+		Escribir "Ingrese un numero"
+		leer nume
+		
+		si mayorn < nume Entonces
+			mayorn= nume
+		FinSi
+	Fin Para
+	
+	Escribir "El numero mayor es: " mayorn
+	
+FinAlgoritmo
+	
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 03_05_2023
+
+
+Algoritmo numero_mayor
+	
+	Definir num1, num2 Como Entero
+	
+	num1 = 10
+	
+	hacer 
+		
+		Escribir "Ingrese un número"
+		leer num2
+		
+	Mientras que num2 >= num1
+	
+	Escribir "El número es menor que " num1
+FinAlgoritmo
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+EJERCICIO 1
+
+Algoritmo ejercicio_1
+	definir num Como Entero
+	Escribir "digite un numero"
+	Leer num
+	Mientras num > 10 Hacer
+		escribir "digitte otro numero"
+		leer num
+		Fin Mientras
+		FinAlgoritmo
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+EJERCICIO 2
+Algoritmo ejercicio_2
+	Definir Num_Min Como Entero
+	Definir Nun_max Como Entero
+	Definir num Como Entero
+	Escribir "digite el numero minimo"
+	leer Num_Min
+	Escribir "digite el numero maximo"
+	Leer Nun_max
+	Escribir "digite un numero en el intervalo de los anteriores"
+	Leer num
+	contador=0
+	mientras num >= Num_Min y num <= Nun_max Hacer
+		Escribir "ingrese otro numero: "
+		leer num
+		contador=contador+1
+	FinMientras
+	Escribir "no esta denro del intervalo "  contador
+FinAlgoritmo
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+EJERCICIO 3
+Algoritmo jercicio_3
+	definir num1 Como Real
+	definir num Como Real
+	escribir "ingrese un numero"
+	leer num1 
+	escribir "ingrese otro numro"
+	Leer num
+	Mientras num > num1 hacer 
+		Escribir "digite otro numero"
+		leer num
+	FinMientras
+	
+FinAlgoritmo
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Algoritmo ejercicio_4
+	definir nota, pract, teor, prob, prom_pract, prom_teor, prom_prob Como real 
+	Definir nom Como Caracter
+	Definir vacio Como Caracter
+	cadena = ""
+	Hacer
+		
+		Escribir "ingrese el nombre del alumno"
+		Leer nom
+		si nom <> vacio Entonces
+			escribir "digite practica: "
+			Leer pract
+			Escribir "digite nota de probelemas: "
+			Leer prob
+			Escribir "digite nota de teoria: "
+			Leer teor
+			si (pract <=1 y prac >= 10 y prob <= 1 y prob >= 10 y teor <= 1 y teor >= 10) Entonces
+				Mostrar  "la nota que ingrsaste esta fuera del rango e calificaciones"
+			sino 
+				prom_pract = (pract*10)/100
+				prom_prob = (prob*50)/100
+				prom_teor = (teor*40)/100
+				nota = prom_pract+prom_prob+prom_teor
+				mostrar  "la nota final de: " nom " es: " nota
+				
+			FinSi
+		FinSi
+	Mientras Que nom <> ""
+	
+FinAlgoritmo
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Algoritmo ejercicio_5
+	definir num Como Entero
+	definir operacion Como Entero
+	escribir "digite un numero entero positivo"
+	leer num
+	contador=0
+	mientras num >= 1 Hacer
+		num = trunc(num/10)
+		contador=contador + 1
+	FinMientras
+	escribir "el numero tiene " contador " digitos"
+FinAlgoritmo
+
+
+
